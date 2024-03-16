@@ -127,17 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="add.cpp" />
-    <ClCompile Include="kadane.cpp" />
-    <ClCompile Include="Multiple Dementions Kadane Algorithm.cpp" />
-    <ClCompile Include="remove.cpp" />
-    <ClCompile Include="scan.cpp" />
+    <ClCompile Include="add.c" />
+    <ClCompile Include="kadane.c" />
+    <ClCompile Include="Multiple Dementions Kadane Algorithm.c" />
+    <ClCompile Include="remove.c" />
+    <ClCompile Include="scan.c" />
+    <ClCompile Include="sumDimentions.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="add.h" />
-    <ClInclude Include="kadane.h" />
-    <ClInclude Include="remove.h" />
-    <ClInclude Include="scan.h" />
     <ClInclude Include="subroutines.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

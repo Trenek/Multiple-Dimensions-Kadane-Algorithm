@@ -16,51 +16,30 @@
     <Filter Include="Pliki źródłowe\Subroutines">
       <UniqueIdentifier>{1e99eb70-0e39-4266-82bc-943bc57e0838}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Pliki źródłowe\Subroutines\Scan">
-      <UniqueIdentifier>{c9f1c8d5-3732-4c41-87d1-ee2a93b9fb8f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Pliki źródłowe\Subroutines\Kadane">
-      <UniqueIdentifier>{f8f3f3ce-d28b-42b5-b1cc-435c3f5b613e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Pliki źródłowe\Subroutines\Add">
-      <UniqueIdentifier>{b8ff19e9-5a6e-46d8-8652-974266c75158}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Pliki źródłowe\Subroutines\Remove">
-      <UniqueIdentifier>{0bd00703-00ae-447c-a0fc-b7a3042bed42}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Multiple Dementions Kadane Algorithm.cpp">
+    <ClCompile Include="Multiple Dementions Kadane Algorithm.c">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
-    <ClCompile Include="scan.cpp">
-      <Filter>Pliki źródłowe\Subroutines\Scan</Filter>
+    <ClCompile Include="add.c">
+      <Filter>Pliki źródłowe\Subroutines</Filter>
     </ClCompile>
-    <ClCompile Include="add.cpp">
-      <Filter>Pliki źródłowe\Subroutines\Add</Filter>
+    <ClCompile Include="kadane.c">
+      <Filter>Pliki źródłowe\Subroutines</Filter>
     </ClCompile>
-    <ClCompile Include="remove.cpp">
-      <Filter>Pliki źródłowe\Subroutines\Remove</Filter>
+    <ClCompile Include="remove.c">
+      <Filter>Pliki źródłowe\Subroutines</Filter>
     </ClCompile>
-    <ClCompile Include="kadane.cpp">
-      <Filter>Pliki źródłowe\Subroutines\Kadane</Filter>
+    <ClCompile Include="scan.c">
+      <Filter>Pliki źródłowe\Subroutines</Filter>
+    </ClCompile>
+    <ClCompile Include="sumDimentions.c">
+      <Filter>Pliki źródłowe\Subroutines</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="scan.h">
-      <Filter>Pliki źródłowe\Subroutines\Scan</Filter>
-    </ClInclude>
     <ClInclude Include="subroutines.h">
       <Filter>Pliki źródłowe\Subroutines</Filter>
-    </ClInclude>
-    <ClInclude Include="add.h">
-      <Filter>Pliki źródłowe\Subroutines\Add</Filter>
-    </ClInclude>
-    <ClInclude Include="remove.h">
-      <Filter>Pliki źródłowe\Subroutines\Remove</Filter>
-    </ClInclude>
-    <ClInclude Include="kadane.h">
-      <Filter>Pliki źródłowe\Subroutines\Kadane</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
