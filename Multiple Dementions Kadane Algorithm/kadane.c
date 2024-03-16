@@ -1,11 +1,13 @@
 #include "subroutines.h"
 
 int Kadane(int* array, int* size, int dimention) {
-    if (dimention == 1) {
-        int tempSum = 0;
-        int sum = 0;
-        int i = 0;
+    int tempSum = 0;
+    int sum = 0;
+    int i = 0;
+    int j = 0;
+    int dimentionSum = 0;
 
+    if (dimention == 1) {
         while (i < size[0]) {
             tempSum += array[i];
             if (tempSum > sum) {
@@ -16,16 +18,9 @@ int Kadane(int* array, int* size, int dimention) {
             }
             i++;
         }
-
-        return sum;
     }
     else {
-        int tempSum = 0;
-        int sum = 0;
-        int i = 0;
-        int j = 0;
-        int dimentionSum = SumDimentions(size, dimention - 1);
-
+        dimentionSum = SumDimentions(size, dimention - 1);
         while (i < size[dimention - 1]) {
             j = i;
             while (j < size[dimention - 1]) {
@@ -45,7 +40,7 @@ int Kadane(int* array, int* size, int dimention) {
             }
             i++;
         }
-
-        return sum;
     }
+
+    return sum;
 }

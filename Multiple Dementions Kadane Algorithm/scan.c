@@ -1,16 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "subroutines.h"
+
 int* Array(int* size, int dimention) {
     int* result = NULL;
-    int actualSize = 1;
+    int actualSize = SumDimentions(size, dimention);;
     int i = 0;
 
-    while (i < dimention) {
-        actualSize *= size[i];
-
-        i += 1;
-    }
     result = (int*)malloc(sizeof(int) * actualSize);
     
     i = 0;
