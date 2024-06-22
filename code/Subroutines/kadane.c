@@ -1,13 +1,13 @@
 #include "subroutines.h"
 
-int Kadane(int *array, int *size, int dimention) {
+int Kadane(int *array, int *size, int dimension) {
     int tempSum = 0;
     int sum = 0;
     int i = 0;
     int j = 0;
-    int dimentionSum = 0;
+    int dimensionSum = 0;
 
-    if (dimention == 1) {
+    if (dimension == 1) {
         while (i < size[0]) {
             tempSum += array[i];
             if (tempSum > sum) {
@@ -20,22 +20,22 @@ int Kadane(int *array, int *size, int dimention) {
         }
     }
     else {
-        dimentionSum = SumDimentions(size, dimention - 1);
-        while (i < size[dimention - 1]) {
+        dimensionSum = SumDimensions(size, dimension - 1);
+        while (i < size[dimension - 1]) {
             j = i;
-            while (j < size[dimention - 1]) {
+            while (j < size[dimension - 1]) {
                 if (i != j) {
-                    Add(array + (i * dimentionSum), array + (j * dimentionSum), size, dimention - 1);
+                    Add(array + (i * dimensionSum), array + (j * dimensionSum), size, dimension - 1);
                 }
-                tempSum = Kadane(array, size, dimention - 1);
+                tempSum = Kadane(array, size, dimension - 1);
                 if (tempSum > sum) {
                     sum = tempSum;
                 }
                 j++;
             }
             j = i + 1;
-            while (j < size[dimention - 1]) {
-                Remove(array + (i * dimentionSum), array + (j * dimentionSum), size, dimention - 1);
+            while (j < size[dimension - 1]) {
+                Remove(array + (i * dimensionSum), array + (j * dimensionSum), size, dimension - 1);
                 j++;
             }
             i++;

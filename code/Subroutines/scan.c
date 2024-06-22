@@ -3,9 +3,9 @@
 
 #include "subroutines.h"
 
-int *Array(int *size, int dimention) {
+int *Array(int *size, int dimension) {
     int *result = NULL;
-    int actualSize = SumDimentions(size, dimention);;
+    int actualSize = SumDimensions(size, dimension);
     int i = 0;
 
     result = (int *)malloc(sizeof(int) * actualSize);

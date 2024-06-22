@@ -6,7 +6,7 @@ set(EXECUTABLES
     "Subroutines/add.c"
     "Subroutines/remove.c"
     "Subroutines/scan.c"
-    "Subroutines/sumDimentions.c"
+    "Subroutines/sumDimensions.c"
     "Subroutines/subroutines.h"
 )
 
