@@ -1,6 +1,6 @@
 #include "subroutines.h"
 
-void Remove(int* array1, int* array2, int* size, int dimention) {
+void Remove(int *array1, int *array2, int *size, int dimention) {
     int i = 0;
     int sum = 0;
 

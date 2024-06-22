@@ -3,12 +3,12 @@
 
 #include "subroutines.h"
 
-int* Array(int* size, int dimention) {
-    int* result = NULL;
+int *Array(int *size, int dimention) {
+    int *result = NULL;
     int actualSize = SumDimentions(size, dimention);;
     int i = 0;
 
-    result = (int*)malloc(sizeof(int) * actualSize);
+    result = (int *)malloc(sizeof(int) * actualSize);
     
     i = 0;
     while (i < actualSize) {

@@ -1,6 +1,6 @@
 #include "subroutines.h"
 
-int Kadane(int* array, int* size, int dimention) {
+int Kadane(int *array, int *size, int dimention) {
     int tempSum = 0;
     int sum = 0;
     int i = 0;

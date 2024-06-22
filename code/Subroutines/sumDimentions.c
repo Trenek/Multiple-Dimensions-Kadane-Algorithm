@@ -1,4 +1,4 @@
-int SumDimentions(int* size, int dimention) {
+int SumDimentions(int *size, int dimention) {
     int result = 1;
 
     while (dimention > 0) {
