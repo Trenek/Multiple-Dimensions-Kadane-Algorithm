@@ -15,7 +15,7 @@ add_executable(kadane
 )
 
 target_include_directories(kadane
-    PRIVATE Subroutines/
+    PRIVATE "Subroutines/"
 )
 
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${EXECUTABLES})
