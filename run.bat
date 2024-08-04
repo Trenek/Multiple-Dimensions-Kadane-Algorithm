@@ -2,6 +2,6 @@
 
 cd build
 cd code
-Test.exe
+kadane.exe
 echo:
 pause
