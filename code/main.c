@@ -18,7 +18,7 @@ int main() {
     while (i > 0) {
         i -= 1;
 
-        scanf("%i", size + i);
+        scanf("%i", &size[i]);
     }
 
     array = Array(size, dimension);

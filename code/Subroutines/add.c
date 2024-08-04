@@ -12,7 +12,7 @@ void Add(int *array1, int *array2, int *size, int dimension) {
     }
     else {
         while (i < size[dimension - 1]) {
-            Add(array1 + (sum * i), array2 + (sum * i), size, dimension - 1);
+            Add(&array1[sum * i], &array2[sum * i], size, dimension - 1);
             i++;
         }
     }

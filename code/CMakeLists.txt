@@ -4,7 +4,7 @@ set(EXECUTABLES
     "main.c"
     "Subroutines/kadane.c"
     "Subroutines/add.c"
-    "Subroutines/remove.c"
+    "Subroutines/subtract.c"
     "Subroutines/scan.c"
     "Subroutines/sumDimensions.c"
     "Subroutines/subroutines.h"

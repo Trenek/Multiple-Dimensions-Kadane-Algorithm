@@ -25,7 +25,7 @@ int Kadane(int *array, int *size, int dimension) {
             j = i;
             while (j < size[dimension - 1]) {
                 if (i != j) {
-                    Add(array + (i * dimensionSum), array + (j * dimensionSum), size, dimension - 1);
+                    Add(&array[i * dimensionSum], &array[j * dimensionSum], size, dimension - 1);
                 }
                 tempSum = Kadane(array, size, dimension - 1);
                 if (tempSum > sum) {
@@ -35,7 +35,7 @@ int Kadane(int *array, int *size, int dimension) {
             }
             j = i + 1;
             while (j < size[dimension - 1]) {
-                Remove(array + (i * dimensionSum), array + (j * dimensionSum), size, dimension - 1);
+                Subtract(&array[i * dimensionSum], &array[j * dimensionSum], size, dimension - 1);
                 j++;
             }
             i++;

@@ -12,7 +12,8 @@ int *Array(int *size, int dimension) {
     
     i = 0;
     while (i < actualSize) {
-        scanf("%i", result + i);
+        scanf("%i", &result[i]);
+
         i += 1;
     }
 
